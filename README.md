@@ -18,3 +18,4 @@ welcome to ask for more demo or pull your request.
 - [toggle collapse](./demos/toggle-collapse.html)
 - [vertical horizontal center](./demos/vertical-horizontal-center.html)
 - [clip path](./demos/clip-path.html)
+- [material input line animate](./demos/material-input-line.html)

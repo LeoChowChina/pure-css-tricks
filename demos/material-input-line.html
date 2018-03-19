@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>material input animate</title>
+  <style>
+    .material-field {
+      width: 500px;
+      height: 60px;
+      position: relative;
+      border-bottom: 1px solid #BDBDBD;
+    }
+    .material-field label {
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+    }
+    .material-field input[type="text"] {
+      width: 500px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 5px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+    }
+    .material-field .line {
+      font-size: 0;
+      line-height: 0;
+      width: 0;
+      height: 1px;
+      background: #00838F;
+      position: absolute;
+      left: 50%;
+      bottom: -1px;
+    }
+    .material-field input[type="text"]:focus ~ .line {
+      width: 100%;
+      left: 0;
+      transition: all .5s;
+      transform-origin: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="material-field">
+    <label for="myInput">user name</label>
+    <input type="text" name="" placeholder="type your user name" id="myInput">
+    <div class="line"></div>
+  </div>
+</body>
