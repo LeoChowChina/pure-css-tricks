@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>table-header-fixed</title>
+  <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">  
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-y: hidden;
+    }
+
+    .header,
+    .content {
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+    }
+
+    .header-content {
+      flex: 1;
+    }
+
+    .content {
+      flex: 1;
+      overflow-x: hidden;
+    }
+
+    .scrollbar-fixed {
+      overflow-y: scroll;
+      visibility: hidden;
+    }
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+    }
+
+
+    /* ------------------ */
+
+    td {
+      border: 1px solid #B3E5FC;
+    }
+
+    td:nth-child(1) {
+      width: 10%;
+    }
+
+    td:nth-child(2) {
+      width: 20%;
+    }
+
+    td:nth-child(3) {
+      width: 30%;
+    }
+
+    td:nth-child(4) {
+      width: 20%;
+    }
+
+    .header td {
+      background: #E1F5FE;
+    }
+
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="header-content">
+      <table>
+        <thead>
+          <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="scrollbar-fixed"></div>
+  </div>
+  <div class="content">
+    <table>
+      <tbody>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+          <td>abc</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+      
+</body>
+</html>

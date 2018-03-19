@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>radio-beatify</title>
+  <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+  <style>
+    .radio-group {}
+    .radio {
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .radio input {
+      display: none;
+    }
+    .radio .radio-text {
+      height: 32px;
+      line-height: 32px;
+      padding-left:28px;
+      display: inline-block;
+      position: relative;
+      color: #424242;
+    }
+    .radio .radio-text:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #424242;
+      border-radius: 50%;
+      left: 2px;
+      top: 6px;
+    }
+    .radio .radio-text:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #00838F;
+      border-radius: 50%;
+      left: 7px;
+      top: 11px;
+      display: none;
+    }
+    .radio:hover .radio-text {
+      color: #00BCD4;
+    }
+    .radio:hover .radio-text:before {
+      border-color: #00BCD4;
+    }
+    .radio input:checked + .radio-text {
+      color: #00838F;
+    }
+    .radio input:checked + .radio-text:before {
+      border-color: #00838F;
+    }
+    .radio input:checked + .radio-text:after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <div class="radio-group">
+      <label class="radio">
+        <input type="radio" name="gender" checked>
+        <span class="radio-text">Male</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="gender">
+        <span class="radio-text">Female</span>
+      </label>
+    </div>
+</body>
+</html>

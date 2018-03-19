@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toggle-collapse</title>
+  <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+  <style>
+    .toggle-wrap {
+      position: relative;
+      display: inline-block;
+      margin-left: 30px;
+    }
+    .icon {
+      width: 30px;
+      height: 18px;
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid #009688;
+      padding: 6px;
+      border-radius: 3px;
+      overflow: hidden;      
+    }
+    .icon > span {
+      width: 30px;
+      height: 2px;
+      margin-bottom: 6px;
+      overflow: hidden;
+      background: #009688;
+      display: block;
+    }
+    .toggle-wrap #toggleHandler {
+      display: none;
+    }
+    .toggle-box {
+      display: none;
+      width: 400px;
+      position: absolute;
+      top: calc(100% + 5px);      
+      background: #fff;
+      border: 1px solid #BDBDBD;
+      padding: 20px;
+      box-shadow: 0 0 5px #9E9E9E;
+    }
+    .toggle-box:before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 12px;
+      width: 0;
+      border-width: 0 6px 6px 6px;
+      border-style: solid;
+      border-color: transparent transparent #BDBDBD transparent;
+    } 
+    .toggle-box:after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 13px;
+      width: 0;
+      border-width: 0 5px 5px 5px;
+      border-style: solid;
+      border-color: transparent transparent #FFF transparent;
+    } 
+
+    .toggle-wrap #toggleHandler:checked + .toggle-box {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h3>click the icon to toggle the box</h3>
+  <div class="toggle-wrap">
+    <label for="toggleHandler" class="icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <input type="checkbox" id="toggleHandler">
+    <div class="toggle-box">
+      toggle content. You can put what you want here.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>simulate background cover</title>
+  <style>
+    .image-wrapper {
+      width: 100%;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    .image-wrapper img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488530660246&di=60c1ba1ebabbd549c7aeded4048ed0be&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1112%2F29%2Fc2%2F10087294_10087294_1325133605031_mthumb.jpg" alt="test">
+  </div>
+</body>
+</html>

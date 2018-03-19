@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vertical horizontal center</title>
+  <style>
+    .main {
+      background: #FAFAFA;
+    }
+    .mask {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .8);
+      overflow: auto;
+    }
+    .modal {
+      width: 60%;
+      max-width: 400px;
+      padding: 20px;
+      background: #fff;
+    }
+    /*transform  */
+    .modal {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }  
+    /*inline-block IE8 +  */
+    /* .mask {
+      text-align: center;
+    }
+    .mask:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 0;
+      vertical-align: middle;
+    }
+    .modal {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;s
+    }  */
+  </style>
+</head>
+<body>
+  <div class="main">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi a iste fuga praesentium architecto asperiores, facere temporibus fugiat saepe cupiditate ea earum perspiciatis. Nesciunt ratione, ut id maxime earum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum explicabo officiis numquam modi enim accusamus, quos, placeat vero iure. Rerum doloribus quidem dolorum, tempora, laudantium aperiam et ex maiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi a iste fuga praesentium architecto asperiores, facere temporibus fugiat saepe cupiditate ea earum perspiciatis. Nesciunt ratione, ut id maxime earum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum explicabo officiis numquam modi enim accusamus, quos, placeat vero iure. Rerum doloribus quidem dolorum, tempora, laudantium aperiam et ex maiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi a iste fuga praesentium architecto asperiores, facere temporibus fugiat saepe cupiditate ea earum perspiciatis. Nesciunt ratione, ut id maxime earum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum explicabo officiis numquam modi enim accusamus, quos, placeat vero iure. Rerum doloribus quidem dolorum, tempora, laudantium aperiam et ex maiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi a iste fuga praesentium architecto asperiores, facere temporibus fugiat saepe cupiditate ea earum perspiciatis. Nesciunt ratione, ut id maxime earum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum explicabo officiis numquam modi enim accusamus, quos, placeat vero iure. Rerum doloribus quidem dolorum, tempora, laudantium aperiam et ex maiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi a iste fuga praesentium architecto asperiores, facere temporibus fugiat saepe cupiditate ea earum perspiciatis. Nesciunt ratione, ut id maxime earum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum explicabo officiis numquam modi enim accusamus, quos, placeat vero iure. Rerum doloribus quidem dolorum, tempora, laudantium aperiam et ex maiores.</p>
+  </div>
+  <div class="mask">
+    <div class="modal">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum explicabo officiis numquam modi enim accusamus, quos, placeat vero iure. Rerum doloribus quidem dolorum, tempora, laudantium aperiam et ex maiores.</p>
+    </div>
+  </div>
+</body>
+</html>

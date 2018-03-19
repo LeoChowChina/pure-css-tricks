@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>checkbox-beatify</title>
+  <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+  <style>
+    .checkbox-group {}
+    .checkbox {
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .checkbox input {
+      display: none;
+    }
+    .checkbox .checkbox-text {
+      height: 32px;
+      line-height: 32px;
+      padding-left:28px;
+      display: inline-block;
+      position: relative;
+      color: #424242;
+    }
+    .checkbox .checkbox-text:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #424242;
+      left: 2px;
+      top: 6px;
+    }
+    .checkbox .checkbox-text:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #00838F;
+      left: 7px;
+      top: 11px;
+      display: none;
+    }
+    .checkbox:hover .checkbox-text {
+      color: #00BCD4;
+    }
+    .checkbox:hover .checkbox-text:before {
+      border-color: #00BCD4;
+    }
+    .checkbox input:checked + .checkbox-text {
+      color: #00838F;
+    }
+    .checkbox input:checked + .checkbox-text:before {
+      border-color: #00838F;
+    }
+    .checkbox input:checked + .checkbox-text:after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <div class="checkbox-group">
+      <label class="checkbox">
+        <input type="checkbox" name="fruits">
+        <span class="checkbox-text">Apple</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="fruits">
+        <span class="checkbox-text">Orange</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="fruits">
+        <span class="checkbox-text">Pear</span>
+      </label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex flexible columns</title>
+  <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+  <style>
+    ul.three-cols-limited {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.three-cols-limited > li {
+      flex: 1;
+      min-width: 25.1%; /* a little bit greater than 100％ / 4 */
+      height: 60px;
+      border: 1px solid #fff;
+      background-color: #80DEEA;
+      box-sizing: border-box;
+    }
+    ul.four-cols-limited {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.four-cols-limited > li {
+      flex: 1;
+      min-width: 20.1%;  /* a little bit greater than 100％ / 5 */
+      height: 60px;
+      border: 1px solid #fff;
+      background-color: #80DEEA;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tree columns</h2>
+  <ul class="three-cols-limited">
+    <li>01</li>
+    <li>02</li>
+    <li>03</li>
+    <li>04</li>
+    <li>05</li>
+    <li>06</li>
+    <li>07</li>
+    <li>08</li>
+  </ul>
+  <h2>four columns</h2>
+  <ul class="four-cols-limited">
+    <li>01</li>
+    <li>02</li>
+    <li>03</li>
+    <li>04</li>
+    <li>05</li>
+    <li>06</li>
+    <li>07</li>
+    <li>08</li>
+    <li>09</li>
+  </ul>
+</body>
+</html>
