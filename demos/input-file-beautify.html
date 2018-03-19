@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>input file beautify</title>
+  <style>
+    .btn {
+      width: 100%;
+      height: 100%;
+      line-height: 40px;
+      text-align: center;
+      background: #039BE5;
+      display: block;
+      color: #fff;
+    }
+    .file1 {
+      width: 300px;
+      height: 40px;
+      overflow: hidden;
+      position: relative;
+    }
+    .file1 input[type="file"] {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      z-index: 10;
+      cursor: pointer;      
+    }
+    .file1 input[type="file"]:hover + span {
+      background: #29B6F6;
+    }
+
+    .file2 .btn {
+      width: 300px;
+      height: 40px;
+      cursor: pointer;
+    }
+    .file2 .btn:hover {
+      background: #29B6F6;
+    }
+    .file2 input[type="file"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>opacity for input file beautify</h2>
+  <div class="file1">
+    <input type="file" name="" id="">
+    <span class="btn">CHOOSE FILE</span>
+  </div>
+  <h2>label for input file beautify</h2>  
+  <div class="file2">
+    <label class="btn">CHOOSE FILE <input type="file" name="" id=""></label for="file2">
+  </div>
+</body>
+</html>
