@@ -8,10 +8,9 @@
   <style>
     .wrapper {
       width: 400px;
-      height: 300px;
-      background: #E0F7FA;
-
+      height: 100px;
       position: relative; /*key point*/
+      margin-bottom: 10px;
     }
     .border {
       position: absolute;
@@ -21,8 +20,10 @@
       transform: scale(0.5);
       transform-origin: 0% 0%;
     }
-    p {
-      padding: 10px;
+    .border1px {
+      width: 400px;
+      height: 100px;
+      border: 1px solid #039BE5;
     }
   </style>
 </head>
@@ -30,8 +31,11 @@
   <div class="wrapper">
     <div class="border"></div>
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci illum accusamus nisi, sapiente quasi sunt nesciunt, iste consequuntur saepe totam labore ex. Accusantium libero nesciunt repellat quia nisi sunt. Qui.
+      0.5px
     </p>
+  </div>
+  <div class="border1px">
+    1px
   </div>
 </body>
 </html>
